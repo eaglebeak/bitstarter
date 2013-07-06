@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
-var data ;
+var data = "this is my intial value" ;
 app.get('/', function(request, response) {
 data = fs.readFile('index.html');//, function (err, data) {
 //  if (err) throw err;
